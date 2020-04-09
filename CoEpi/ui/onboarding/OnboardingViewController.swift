@@ -56,9 +56,9 @@ class OnboardingViewController: UIViewController {
     }
     
     @IBAction func howDataUsedClick(_ sender: UIButton) {
-        if let url = URL(string: "https://www.hackingwithswift.com/read/") {
+        if let url = URL(string: "https://www.coepi.org/privacy/") {
             let config = SFSafariViewController.Configuration()
-            config.entersReaderIfAvailable = true
+            config.entersReaderIfAvailable = false
 
             let vc = SFSafariViewController(url: url, configuration: config)
             present(vc, animated: true)
